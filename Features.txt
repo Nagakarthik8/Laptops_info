@@ -1,0 +1,16 @@
+Frontend - HTML, CSS 
+Backend - PHP
+Interaction - JS
+
+IDE - VScode
+Server - ?
+
+UI-Design
+
+Database
+
+Prototype
+
+Final
+
+AfterEffects
