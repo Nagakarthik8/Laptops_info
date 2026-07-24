@@ -31,10 +31,15 @@ speakers
 camera
 extra features
 
-Prototype
-main,about,choose,product,login,profile.
+Prototype - 4Days
+main
+about-Mahesh
+choose
+product
+login-Naga Karthik
+profile-Umeshh Nanda
 
-Final
+Final - 3Days
 comapre,server conneciton.
 
 AfterEffects
