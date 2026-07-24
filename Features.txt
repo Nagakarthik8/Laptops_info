@@ -3,14 +3,38 @@ Backend - PHP
 Interaction - JS
 
 IDE - VScode
-Server - ?
+Server - Online
 
 UI-Design
 
 Database
+data 1
+name
+email
+password
+
+data2
+laptopname
+model
+ram
+ssd/hdd
+r/w speeds
+display
+keyboard
+rgb
+ports
+cpu
+internal specs
+gpu
+internal specs
+speakers
+camera
+extra features
 
 Prototype
+main,about,choose,product,login,profile.
 
 Final
+comapre,server conneciton.
 
 AfterEffects
