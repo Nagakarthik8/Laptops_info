@@ -3,7 +3,7 @@ Backend - PHP
 Interaction - JS
 
 IDE - VScode
-Server - Online
+Server - Online(Neon)
 
 UI-Design
 
@@ -40,6 +40,7 @@ login-Naga Karthik
 profile-Umeshh Nanda
 
 Final - 3Days
-comapre,server conneciton.
+compare,server conneciton.
 
 AfterEffects
+Responsive
