@@ -1,0 +1,59 @@
+body.dark{
+    background-color: #080616;
+    color: aliceblue;
+}
+/*The Top Menu Bar*/
+div.dark{
+    display: flow-root;
+    background-color: whitesmoke;
+    width: 100%;
+    height: 5vh;
+    flex-wrap: wrap;
+    color: #080616;
+    align-content: center;
+}
+.about{
+    float: right;
+    padding: 1vh;
+    text-align: center;
+    font-weight: bolder;
+    font-size: large;
+    height: 3vh;
+    width: 5vw;
+}
+.about:hover{
+    background-color: aqua;
+}
+a{
+    text-decoration: none;
+    color: #080616;
+}
+.logo_full{
+    height: 100%;
+}
+
+.dark-choose{
+    display: flow-root;
+    margin-top: 5vh;
+    background-color: whitesmoke;
+    color: #080616;
+    width: 90vw;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5vh;
+}
+.dark-q{
+    border: 1px #080616 solid;
+    margin: 2vh;
+    padding: 1vh;
+}
+
+footer{
+    margin-top: 5vh;
+    background-color: whitesmoke;
+    padding: 1vh;
+    text-align: center;
+    color: #080616;
+    font-weight: bolder;
+}
