@@ -34,10 +34,10 @@ extra features
 Prototype - 4Days
 main
 about-Mahesh
-choose
+choose-Umeshh Nanda
 product
 login-Naga Karthik
-profile-Umeshh Nanda
+profile-Umeshh Nanda-Complete
 
 Final - 3Days
 compare,server conneciton.
