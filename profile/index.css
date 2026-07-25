@@ -2,6 +2,7 @@ body.dark{
     background-color: #080616;
     color: aliceblue;
 }
+/*The Top Menu Bar*/
 div.dark{
     display: flex;
     background-color: whitesmoke;
@@ -16,8 +17,6 @@ div.dark{
     text-justify: center;
     font-weight: bolder;
     font-size: large;
-    align-content: center;
-    justify-content: center;
     height: 100%;
     width: 20%;
 }
