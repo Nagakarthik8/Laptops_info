@@ -1,0 +1,79 @@
+body.dark{
+    background-color: #080616;
+    color: aliceblue;
+}
+/*The Top Menu Bar*/
+div.dark{
+    display: flow-root;
+    background-color: whitesmoke;
+    width: 100%;
+    height: 5vh;
+    flex-wrap: wrap;
+    color: #080616;
+    align-content: center;
+}
+.about{
+    float: right;
+    padding: 1vh;
+    text-align: center;
+    font-weight: bolder;
+    font-size: large;
+    height: 3vh;
+    width: 5vw;
+}
+.about:hover{
+    background-color: aqua;
+}
+a{
+    text-decoration: none;
+    color: #080616;
+}
+.logo_full{
+    height: 100%;
+}
+
+.dark-pro{
+    background-color: azure;
+    width: 60%;
+    padding: 5vh;
+    border: 1px #080616 solid;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vh;
+}
+.dark-products-page{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: beige;
+    margin-top: 5vh;
+}
+.dark-product{
+    display: flow-root;
+    margin: 2vh;
+    background-color: aquamarine;
+    color: #080616;
+    padding: 2vh;
+}
+.dark-search{
+    width: 40vw;
+    height: 3vh;
+}
+.dark-pro-image{
+    float: left;
+    background-color: aqua;
+    width: 5vw;
+    height: 5vw;
+}
+label{
+    margin-left: 2vh;
+    font-weight: bolder;
+}
+
+footer{
+    margin-top: 5vh;
+    background-color: whitesmoke;
+    padding: 1vh;
+    text-align: center;
+    color: #080616;
+    font-weight: bolder;
+}
