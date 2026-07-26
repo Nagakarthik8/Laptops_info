@@ -33,7 +33,8 @@ a{
 }
 
 .dark-choose{
-    display: flow-root;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     margin-top: 5vh;
     background-color: whitesmoke;
     color: #080616;
@@ -44,9 +45,25 @@ a{
     padding: 5vh;
 }
 .dark-q{
+    display: flow-root;
     border: 1px #080616 solid;
     margin: 2vh;
-    padding: 1vh;
+    padding: 1vw;
+}
+.dark-q-img{
+    float: left;
+    background-color: rgb(115, 147, 115);
+    border-radius: 4vw;
+    width: 8vw;
+    height: 8vw;
+}
+.dark-q-detail{
+    float: right;
+    background-color: blanchedalmond;
+    border: 1px #080616 solid;
+    padding: 1vw;
+    width: 70%;
+    height: 6vw;
 }
 
 footer{
