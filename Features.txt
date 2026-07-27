@@ -40,7 +40,9 @@ login-Naga Karthik
 profile-Umeshh Nanda-Complete
 
 Final - 3Days
-compare,server conneciton.
+compare
+server conneciton.
 
 AfterEffects
 Responsive
+Adding About for Every Feature of laptop
