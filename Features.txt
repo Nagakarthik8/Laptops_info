@@ -35,12 +35,12 @@ Prototype - 4Days
 main-Umeshh Nanda-Complete
 about-Mahesh
 choose-Umeshh Nanda-Complete
-product
+product-Umeshh Nanda-Complete
 login-Naga Karthik
 profile-Umeshh Nanda-Complete
 
 Final - 3Days
-compare
+compare-Umeshh Nanda-Complete
 server conneciton.
 
 AfterEffects
