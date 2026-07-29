@@ -39,6 +39,7 @@ product-Umeshh Nanda-Complete
 login-Naga Karthik
 register-Naga Karthik-Complete
 profile-Umeshh Nanda-Complete
+p-register-Umeshh Nanda-Complete
 
 Final - 3Days
 compare-Umeshh Nanda-Complete
