@@ -19,26 +19,25 @@
     </div>
     
     <div class="registerp-dark">
+        <form action="index.php" method="post">
         <label>Laptop Image:</label>
         <input type="file"><br><br>
         <label>Company:</label>
-        <select>
-            <option>Lenovo</option>
-            <option>HP</option>
-            <option>Dell</option>
-            <option>Asus</option>
+        <select name="company">
+            <option value="Lenovo">Lenovo</option>
+            <option value="HP">HP</option>
+            <option value="Dell">Dell</option>
+            <option value="Asus">Asus</option>
         </select><br><br>
         <label>Model:</label>
-        <input type="text"><br><br>
+        <input type="text" name="model"><br><br>
         <label>Ram:</label>
-        <input type="text"><br><br>
+        <input type="text" name="ram"><br><br>
         <label>SSD/HDD:</label>
-        <input type="text"><br><br>
+        <input type="text" name="disk"><br><br>
         <label>r/w Speeds:</label>
         <input type="text"><br><br>
         <label>Display:</label>
-        <input type="text"><br><br>
-        <label>Keyboard:</label>
         <input type="text"><br><br>
         <label>Keyboard:</label>
         <input type="text"><br><br>
@@ -56,6 +55,8 @@
         <input type="text"><br><br>
         <label>Extra Features:</label>
         <input type="text"><br><br>
+        <button type="submit"></button>
+        </form>
     </div>
 
    <footer>

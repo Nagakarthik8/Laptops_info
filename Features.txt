@@ -43,7 +43,8 @@ p-register-Umeshh Nanda-Complete
 
 Final - 3Days
 compare-Umeshh Nanda-Complete
-server conneciton.
+users server conneciton
+products server connection.
 
 AfterEffects
 Responsive
