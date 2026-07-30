@@ -53,6 +53,11 @@ label{
     font-weight: bolder;
     margin: 5vw;
 }
+label1{
+    font-size: medium;
+    font-weight: 300;
+    margin-left: 4vh;
+}
 
 footer{
     margin-top: 5vh;

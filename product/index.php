@@ -17,14 +17,14 @@
         <a href="/compare/"><div class="about">Compare</div></a>
         <a href="/"><div class="about">Home</div></a>
     </div>
+    
+    <div class="product-outer-dark">
+        <div class="product-img">
+        </div>
+        <?php
+            $id = $_GET['id'];
 
-    <div class="dark-pro">
-        <form action="" method="post">
-            <input type="text" class="dark-search">
-        </form>
-        <div class="dark-products-page">
-            <?php
-			$envFile = __DIR__ . '/server.env';
+            $envFile = __DIR__ . '/../server.env';
 
             if (file_exists($envFile)) {
                 $lines = file($envFile, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
@@ -42,31 +42,46 @@
             $pass = getenv('DB_PASS');
             $port = getenv('DB_PORT');
 
-			$dsn = "pgsql:host=$host;port=$port;dbname=$db;sslmode=require";
+            $dsn = "pgsql:host=$host;port=$port;dbname=$db;sslmode=require";
 
-			try{
+            try{
                 $pdo = new PDO($dsn, $user, $pass, [
                     PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION, // Throw exceptions on SQL errors
                     PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,       // Return array indexed by column names
                     PDO::ATTR_EMULATE_PREPARES   => false,                  // Use native prepared statements
                 ]);
 
-                $r = $pdo->query("SELECT * FROM products");
+                $r = $pdo->query("SELECT * FROM products WHERE id = '$id'");
 
-                while($row = $r->fetch()){
-				    $company = $row["company"];
-                    $model = $row['model'];
-                    echo "<a href='/product/index.php?id=".$row['id']."'><div class='dark-product'><div class='dark-pro-image'></div><label>Company:</label><br><br><label1>".$company."</label1><br><br><label>Model:</label><br><br><label1>".$model."</label1></div></a>";
-			    }
+                $row = $r->fetch();
+				
+                $company = $row["company"];
+                $model = $row['model'];
+                $ram = $row['ram'];
+                $disk = $row['disk'];
+                
+                echo "<label>Company: <label1>".$company."</label1></label><br><br>
+                    <label>Model Name: <label1>".$model."</label1></label><br><br>
+                    <label>Ram: <label1>".$ram."</label1></label><br><br>
+                    <label>SSD/HDD: <label1>".$disk."</label1></label><br><br>";
             }
             catch (PDOException $e) {
                 // Handle error safely without exposing passwords
                 error_log("Database Error: " . $e->getMessage());
                 echo "Failed: Database operation error.";
             }
-		
-            ?>
-        </div>
+        ?>
+        
+        <label>r/w Speeds:</label><br><br>
+        <label>Display:</label><br><br>
+        <label>Keyboard:</label><br><br>
+        <label>RGB:</label><br><br>
+        <label>Ports:</label><br><br>
+        <label>CPU:</label><br><br>
+        <label>GPU:</label><br><br>
+        <label>Speakers:</label><br><br>
+        <label>Camera:</label><br><br>
+        <label>Extra Features:</label><br><br>
     </div>
 
    <footer>
