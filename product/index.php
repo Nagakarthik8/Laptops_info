@@ -59,11 +59,31 @@
                 $model = $row['model'];
                 $ram = $row['ram'];
                 $disk = $row['disk'];
+                $rwspeeds = $row['rwspeeds'];
+                $display = $row['display'];
+                $keyboard = $row['keyboard'];
+                $rgb = $row['rgb'];
+                $ports = $row['ports'];
+                $cpu = $row['cpu'];
+                $gpu = $row['gpu'];
+                $speakers = $row['speakers'];
+                $camera = $row['camera'];
+                $extraf = $row['extraf'];
                 
                 echo "<label>Company: <label1>".$company."</label1></label><br><br>
                     <label>Model Name: <label1>".$model."</label1></label><br><br>
                     <label>Ram: <label1>".$ram."</label1></label><br><br>
-                    <label>SSD/HDD: <label1>".$disk."</label1></label><br><br>";
+                    <label>SSD/HDD: <label1>".$disk."</label1></label><br><br>
+                    <label>r/w Speeds: <label1>".$rwspeeds."</label1></label><br><br>
+                    <label>Display: <label1>".$display."</label1></label><br><br>
+                    <label>Keyboard: <label1>".$keyboard."</label1></label><br><br>
+                    <label>RGB: <label1>".$rgb."</label1></label><br><br>
+                    <label>Ports: <label1>".$ports."</label1></label><br><br>
+                    <label>CPU: <label1>".$cpu."</label1></label><br><br>
+                    <label>GPU: <label1>".$gpu."</label1></label><br><br>
+                    <label>Speakers: <label1>".$speakers."</label1></label><br><br>
+                    <label>Camera: <label1>".$camera."</label1></label><br><br>
+                    <label>Extra Features: <label1>".$extraf."</label1></label><br><br>";
             }
             catch (PDOException $e) {
                 // Handle error safely without exposing passwords
@@ -72,16 +92,6 @@
             }
         ?>
         
-        <label>r/w Speeds:</label><br><br>
-        <label>Display:</label><br><br>
-        <label>Keyboard:</label><br><br>
-        <label>RGB:</label><br><br>
-        <label>Ports:</label><br><br>
-        <label>CPU:</label><br><br>
-        <label>GPU:</label><br><br>
-        <label>Speakers:</label><br><br>
-        <label>Camera:</label><br><br>
-        <label>Extra Features:</label><br><br>
     </div>
 
    <footer>

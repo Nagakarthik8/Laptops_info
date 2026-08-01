@@ -22,6 +22,16 @@
     $model = $_POST['model'];
     $ram = $_POST['ram'];
     $disk = $_POST['disk'];
+    $rwspeeds = $_POST['rwspeeds'];
+    $display = $_POST['display'];
+    $keyboard = $_POST['keyboard'];
+    $rgb = $_POST['rgb'];
+    $ports = $_POST['ports'];
+    $cpu = $_POST['cpu'];
+    $gpu = $_POST['gpu'];
+    $speakers = $_POST['speakers'];
+    $camera = $_POST['camera'];
+    $extraf = $_POST['extraf'];
 
     $dsn = "pgsql:host=$host;port=$port;dbname=$db;sslmode=require";
     
@@ -32,12 +42,12 @@
         PDO::ATTR_EMULATE_PREPARES   => false,                  // Use native prepared statements
     ]);
 
-    $stmt = $pdo->prepare("INSERT INTO products(company,model,ram,disk) VALUES (?,?,?,?)");
+    $stmt = $pdo->prepare("INSERT INTO products(company,model,ram,disk,rwspeeds,display,keyboard,rgb,ports,cpu,gpu,speakers,camera,extraf) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
     if($stmt === false){
         die('Preparation Failed');
     }
 
-    $success = $stmt->execute([$company, $model, $ram, $disk]);
+    $success = $stmt->execute([$company, $model, $ram, $disk, $rwspeeds, $display, $keyboard, $rgb, $ports, $cpu, $gpu, $speakers, $camera, $extraf]);
     if($success){
         echo "Success";
     }
